@@ -33,5 +33,8 @@
     "test:coverage": "jest --coverage",
     "build": "tsc",
     "watch": "nodemon --watch ./src --exec \"ts-node ./src/index.ts\""
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }

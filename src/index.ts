@@ -1,6 +1,20 @@
-import add from './math/add'
+const fizzBuzzNumber = (number) => {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return 'FizzBuzz'
+  } else if (number % 3 === 0) {
+    return 'Fizz'
+  } else if (number % 5 === 0) {
+    return 'Buzz'
+  }
+  return number
+}
 
-const sum = (a, b) => a + b
-console.log(add(1, 2))
+const fizzBuzzIterate = (limit) => {
+  let result = []
+  for (let i = 1; i <= limit; i++) {
+    result.push(fizzBuzzNumber(i))
+  }
+  return result.join('\n')
+}
 
-export default sum
+export { fizzBuzzNumber, fizzBuzzIterate }
