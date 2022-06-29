@@ -1,4 +1,4 @@
-const fizzBuzzNumber = (number) => {
+const fizzBuzzNumber = (number: number) => {
   if (number % 3 === 0 && number % 5 === 0) {
     return 'FizzBuzz'
   } else if (number % 3 === 0) {
@@ -9,7 +9,7 @@ const fizzBuzzNumber = (number) => {
   return number
 }
 
-const fizzBuzzIterate = (limit) => {
+const fizzBuzzIterate = (limit: number) => {
   let result = []
   for (let i = 1; i <= limit; i++) {
     result.push(fizzBuzzNumber(i))
